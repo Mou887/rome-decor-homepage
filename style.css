@@ -1,0 +1,196 @@
+
+html{
+    font-size: 12px;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+
+.one{
+    height:60vh;
+    display: flex;
+    
+}
+.two{
+    height: 40vh;    
+}
+.imagePart{
+    width: 75%;
+    display:flex;  
+    position: relative;
+      
+}
+.imagePart img {
+    width: 100%;
+    height: 100%;
+}
+.textPart{
+    width: 30%;
+    padding:4rem;
+}
+.textPart h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.textPart p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.two{
+    display: flex;
+}
+.two span{
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 2rem;
+    word-wrap: break-word;
+}
+.two img{
+    width: 35%;
+}
+.icon{
+    background-color: hsl(0, 0%, 0%);
+    padding: 1rem;        
+}
+.shopText{
+    padding:0.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+}
+
+.two span h4{
+    letter-spacing: 0.5rem;
+}
+
+.icon-div{
+    padding:0rem;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.two span h4{
+    margin: 0rem;
+}
+
+.list-of-tabs{
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+}
+.hb{
+    position: absolute;
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    display: none;
+}
+
+.tabs{
+    display: flex;
+}
+.tabs li{
+    list-style-type: none;
+    margin: 1rem;
+}
+.first-tab{
+    font-size: large;
+}
+.mobilemenu{
+    display: none;
+}
+.blackout{
+    display:none;
+}
+
+
+.icon:hover{
+    background-color:hsl(0, 0%, 27%);
+    cursor: pointer;
+}
+.shopText:hover{
+    cursor: pointer;
+}
+.tabs li:hover:not(.first-tab){
+    cursor: pointer;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+}
+
+
+@media (max-width:1055px){
+    .one{
+        height:auto;
+        flex-direction: column;
+        width:100%;
+    }
+    .two{
+        flex-direction: column;
+        height: auto;
+    }
+    .imagePart{
+    width: 100%;  
+     
+}
+   .textPart{
+    width: 90%;
+    padding:2rem;
+    margin: 1rem;
+}
+.icon-div{
+    position: absolute;
+    top:90%;
+    left:90%;
+}
+.list-of-tabs{
+    display: none;
+}
+.two img{
+    width: 100%;
+}
+.hb{
+    display: flex;
+    top:5%;
+    left:2%;
+    justify-content: space-between;
+    width: 50%;
+}
+.mobilemenu{
+    display:none;
+    background-color:  hsl(0, 0%, 100%);
+    width:100%;
+    height: 10%;
+    position: absolute;
+    z-index: 2;
+}
+
+
+.menulist{
+    color: hsl(0, 0%, 0%);
+}
+.lists{
+    display: flex;
+}
+.lists li{
+    list-style-type: none;
+    margin: 1rem;
+    font-weight: bold;
+}
+.mobilemenu img{
+    width:5%;
+    height: 35%;
+    margin: 2%;
+
+}
+.blackout{
+    width:100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 0%);
+    opacity: 0.6;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+}
